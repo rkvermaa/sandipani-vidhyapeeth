@@ -1683,3 +1683,21 @@ section {
 .contact-form .btn {
     width: 100%;
 }
+
+/* Logo Image Styling */
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-right: var(--spacing-xs);
+}
+
+.footer .logo-image {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 40px;
+    }
+}
