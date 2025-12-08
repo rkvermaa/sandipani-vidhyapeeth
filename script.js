@@ -194,3 +194,55 @@ window.addEventListener('scroll', () => {
 });
 
 console.log('School website loaded successfully!');
+
+// Tab Functionality
+function openTab(evt, tabName) {
+    var i, tabContent, tabBtns;
+
+    // Hide all tab content
+    tabContent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+        tabContent[i].classList.remove("active");
+    }
+
+    // Remove active class from all buttons
+    tabBtns = document.getElementsByClassName("tab-btn");
+    for (i = 0; i < tabBtns.length; i++) {
+        tabBtns[i].className = tabBtns[i].className.replace(" active", "");
+    }
+
+    // Show the specific tab content
+    document.getElementById(tabName).style.display = "block";
+    setTimeout(() => {
+        document.getElementById(tabName).classList.add("active");
+    }, 10);
+
+    // Add active class to the button that opened the tab
+    evt.currentTarget.className += " active";
+}
+
+// Carousel Functionality
+let currentFacilitySlide = 0;
+const facilityTrack = document.getElementById('facilitiesTrack');
+if (facilityTrack) {
+    const facilitySlides = facilityTrack.querySelectorAll('.carousel-slide');
+    const facilitySlideCount = facilitySlides.length;
+
+    function updateFacilityCarousel() {
+        facilityTrack.style.transform = `translateX(-${currentFacilitySlide * 100}%)`;
+    }
+
+    window.nextSlide = function () {
+        currentFacilitySlide = (currentFacilitySlide + 1) % facilitySlideCount;
+        updateFacilityCarousel();
+    }
+
+    window.prevSlide = function () {
+        currentFacilitySlide = (currentFacilitySlide - 1 + facilitySlideCount) % facilitySlideCount;
+        updateFacilityCarousel();
+    }
+
+    // Auto advance carousel
+    setInterval(window.nextSlide, 5000);
+}

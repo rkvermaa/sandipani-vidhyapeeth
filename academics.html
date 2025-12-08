@@ -1,1 +1,486 @@
-<html><head><title>Coming Soon</title><link rel='stylesheet' href='styles.css'></head><body><div class='page-header'><div class='container'><h1>Coming Soon</h1><p>This page is under construction</p><a href='index.html' class='btn btn-primary' style='margin-top:20px'>Back to Home</a></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Sandipani VidhyaPeeth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎓</div>
+                <div class="logo-text">Sandipani VidhyaPeeth</div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="academics.html" class="nav-link active">Academics</a></li>
+                <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li><a href="student-life.html" class="nav-link">Student Life</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="academic-hero">
+        <div class="container">
+            <h1>Academic Excellence</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span style="margin: 0 10px;">/</span> Academics
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Academic Philosophy -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Philosophy</span>
+                <h2 class="section-title">Nurturing Future Leaders</h2>
+            </div>
+            <div class="philosophy-grid">
+                <div class="philosophy-content">
+                    <p>At Sandipani VidhyaPeeth, we believe that education is not just about acquiring knowledge, but
+                        about igniting a lifelong passion for learning. Our holistic approach combines traditional
+                        values with modern pedagogical methods to develop well-rounded individuals.</p>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-brain"></i></div>
+                            <span class="value-text">Critical Thinking</span>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-heart"></i></div>
+                            <span class="value-text">Emotional Intelligence</span>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-globe"></i></div>
+                            <span class="value-text">Global Perspective</span>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-hands-helping"></i></div>
+                            <span class="value-text">Community Service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="philosophy-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-book-reader placeholder-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Curriculum Tabs -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Curriculum</span>
+                <h2 class="section-title">Learning Pathways</h2>
+            </div>
+
+            <div class="curriculum-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'primary')">Primary School</button>
+                <button class="tab-btn" onclick="openTab(event, 'middle')">Middle School</button>
+                <button class="tab-btn" onclick="openTab(event, 'senior')">Senior School</button>
+            </div>
+
+            <!-- Primary Tab -->
+            <div id="primary" class="tab-content active">
+                <div class="curriculum-card">
+                    <div class="curriculum-info">
+                        <h3>Foundation Years (Grades 1-5)</h3>
+                        <p>Our primary curriculum focuses on building strong foundational skills in literacy and
+                            numeracy while encouraging curiosity through play-based learning.</p>
+                        <ul class="curriculum-features">
+                            <li><i class="fas fa-check-circle check-icon"></i> Activity-based learning approach</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Focus on language development</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Introduction to basic sciences</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Arts and physical education integration
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-img">
+                        <div class="image-placeholder" style="height: 300px;">
+                            <i class="fas fa-child placeholder-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Tab -->
+            <div id="middle" class="tab-content">
+                <div class="curriculum-card">
+                    <div class="curriculum-info">
+                        <h3>Exploratory Years (Grades 6-8)</h3>
+                        <p>Middle school students transition to more structured learning, exploring a wider range of
+                            subjects and developing independent study habits.</p>
+                        <ul class="curriculum-features">
+                            <li><i class="fas fa-check-circle check-icon"></i> Project-based learning modules</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Advanced STEM concepts</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Third language options</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Leadership development programs</li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-img">
+                        <div class="image-placeholder" style="height: 300px;">
+                            <i class="fas fa-user-graduate placeholder-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Senior Tab -->
+            <div id="senior" class="tab-content">
+                <div class="curriculum-card">
+                    <div class="curriculum-info">
+                        <h3>Preparatory Years (Grades 9-12)</h3>
+                        <p>Senior school prepares students for higher education and career paths with specialized
+                            streams and rigorous academic standards.</p>
+                        <ul class="curriculum-features">
+                            <li><i class="fas fa-check-circle check-icon"></i> Specialized streams (Science, Commerce,
+                                Humanities)</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Career counseling and guidance</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Competitive exam preparation</li>
+                            <li><i class="fas fa-check-circle check-icon"></i> Research and internship opportunities
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-img">
+                        <div class="image-placeholder" style="height: 300px;">
+                            <i class="fas fa-university placeholder-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Subject Matrix -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Departments</span>
+                <h2 class="section-title">Academic Disciplines</h2>
+            </div>
+            <div class="subject-matrix">
+                <div class="subject-card">
+                    <i class="fas fa-flask subject-icon"></i>
+                    <h4>Sciences</h4>
+                    <div class="subject-tags">
+                        <span class="subject-tag">Physics</span>
+                        <span class="subject-tag">Chemistry</span>
+                        <span class="subject-tag">Biology</span>
+                    </div>
+                </div>
+                <div class="subject-card">
+                    <i class="fas fa-calculator subject-icon"></i>
+                    <h4>Mathematics</h4>
+                    <div class="subject-tags">
+                        <span class="subject-tag">Algebra</span>
+                        <span class="subject-tag">Geometry</span>
+                        <span class="subject-tag">Calculus</span>
+                    </div>
+                </div>
+                <div class="subject-card">
+                    <i class="fas fa-book subject-icon"></i>
+                    <h4>Languages</h4>
+                    <div class="subject-tags">
+                        <span class="subject-tag">English</span>
+                        <span class="subject-tag">Hindi</span>
+                        <span class="subject-tag">Sanskrit</span>
+                    </div>
+                </div>
+                <div class="subject-card">
+                    <i class="fas fa-laptop-code subject-icon"></i>
+                    <h4>Technology</h4>
+                    <div class="subject-tags">
+                        <span class="subject-tag">Computer Science</span>
+                        <span class="subject-tag">AI & Robotics</span>
+                    </div>
+                </div>
+                <div class="subject-card">
+                    <i class="fas fa-palette subject-icon"></i>
+                    <h4>Arts</h4>
+                    <div class="subject-tags">
+                        <span class="subject-tag">Visual Arts</span>
+                        <span class="subject-tag">Music</span>
+                        <span class="subject-tag">Dance</span>
+                    </div>
+                </div>
+                <div class="subject-card">
+                    <i class="fas fa-running subject-icon"></i>
+                    <h4>Physical Ed</h4>
+                    <div class="subject-tags">
+                        <span class="subject-tag">Sports</span>
+                        <span class="subject-tag">Yoga</span>
+                        <span class="subject-tag">Health</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Teaching Methodology -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Methodology</span>
+                <h2 class="section-title">How We Teach</h2>
+            </div>
+            <div class="methodology-grid">
+                <div class="method-card">
+                    <div class="method-bg"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="method-overlay">
+                        <h3>Experiential Learning</h3>
+                        <p>Learning by doing through experiments, field trips, and hands-on activities.</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-bg"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="method-overlay">
+                        <h3>Collaborative Projects</h3>
+                        <p>Group projects that foster teamwork, communication, and problem-solving skills.</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-bg"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');">
+                    </div>
+                    <div class="method-overlay">
+                        <h3>Digital Integration</h3>
+                        <p>Smart classrooms and digital tools to enhance the learning experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Faculty Excellence -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Faculty Excellence</h2>
+            </div>
+            <div class="faculty-showcase">
+                <div class="faculty-stats">
+                    <div class="f-stat">
+                        <h3>50+</h3>
+                        <p>Qualified Teachers</p>
+                    </div>
+                    <div class="f-stat">
+                        <h3>15+</h3>
+                        <p>Years Avg Experience</p>
+                    </div>
+                    <div class="f-stat">
+                        <h3>100%</h3>
+                        <p>Certified Educators</p>
+                    </div>
+                </div>
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <div class="faculty-img">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Dr. Rajesh Kumar</h4>
+                            <p class="faculty-role">Head of Sciences</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-img">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Mrs. Sarah Jones</h4>
+                            <p class="faculty-role">Head of Humanities</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-img">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Mr. Amit Patel</h4>
+                            <p class="faculty-role">Sports Director</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-img">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="faculty-info">
+                            <h4>Ms. Priya Sharma</h4>
+                            <p class="faculty-role">Arts Coordinator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Learning Facilities Carousel -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Infrastructure</span>
+                <h2 class="section-title">World-Class Facilities</h2>
+            </div>
+            <div class="facilities-carousel">
+                <div class="carousel-track" id="facilitiesTrack">
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
+                            alt="Science Lab">
+                        <div class="slide-caption">
+                            <h3>Advanced Science Labs</h3>
+                            <p>State-of-the-art physics, chemistry, and biology laboratories.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
+                            alt="Library">
+                        <div class="slide-caption">
+                            <h3>Digital Library</h3>
+                            <p>Extensive collection of books and digital resources.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
+                            alt="Sports Complex">
+                        <div class="slide-caption">
+                            <h3>Sports Complex</h3>
+                            <p>Indoor and outdoor sports facilities for holistic development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="c-btn" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+                    <button class="c-btn" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Academic Achievements -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Results</span>
+                <h2 class="section-title">Academic Achievements</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <div>
+                        <h3>100% Pass Rate</h3>
+                        <p>Consistent 100% pass rate in board examinations for the last 10 years.</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <div>
+                        <h3>National Toppers</h3>
+                        <p>Our students consistently rank among the top 1% in national level competitive exams.</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-star"></i></div>
+                    <div>
+                        <h3>Olympiad Winners</h3>
+                        <p>Gold medals in International Math and Science Olympiads.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Assessment System -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Evaluation</span>
+                <h2 class="section-title">Assessment System</h2>
+            </div>
+            <div class="assessment-timeline">
+                <div class="assessment-item">
+                    <div class="assessment-dot"></div>
+                    <div class="assessment-content">
+                        <h3>Formative Assessment</h3>
+                        <p>Continuous evaluation through class participation, quizzes, and projects throughout the term.
+                        </p>
+                    </div>
+                </div>
+                <div class="assessment-item">
+                    <div class="assessment-dot"></div>
+                    <div class="assessment-content">
+                        <h3>Summative Assessment</h3>
+                        <p>End-of-term examinations to evaluate comprehensive understanding of the curriculum.</p>
+                    </div>
+                </div>
+                <div class="assessment-item">
+                    <div class="assessment-dot"></div>
+                    <div class="assessment-content">
+                        <h3>Holistic Report</h3>
+                        <p>Detailed report cards covering academic performance, co-curricular activities, and personal
+                            development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-dark); color: white; padding: 4rem 0;">
+        <div class="container">
+            <div class="footer-content"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+                <div>
+                    <div class="logo" style="margin-bottom: 1.5rem;">
+                        <span style="font-size: 2rem;">🎓</span>
+                        <span class="logo-text">Sandipani VidhyaPeeth</span>
+                    </div>
+                    <p style="color: var(--text-light);">Empowering minds, shaping futures.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="about.html" style="color: var(--text-light);">About Us</a></li>
+                        <li><a href="academics.html" style="color: var(--text-light);">Academics</a></li>
+                        <li><a href="admissions.html" style="color: var(--text-light);">Admissions</a></li>
+                        <li><a href="contact.html" style="color: var(--text-light);">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Contact Us</h4>
+                    <p style="color: var(--text-light); margin-bottom: 0.5rem;">123 Education Lane, Knowledge City</p>
+                    <p style="color: var(--text-light); margin-bottom: 0.5rem;">+91 98765 43210</p>
+                    <p style="color: var(--text-light);">info@sandipani.edu.in</p>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 1.5rem; text-align: center; color: var(--text-light);">
+                <p>&copy; 2025 Sandipani VidhyaPeeth. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
