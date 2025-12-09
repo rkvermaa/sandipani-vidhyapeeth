@@ -1717,7 +1717,7 @@ section {
 
 /* Academic Hero */
 .academic-hero {
-    background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)), url('images/academic-hero.jpg');
+    background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)), url('../images/academic-hero.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
