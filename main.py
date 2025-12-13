@@ -4,6 +4,8 @@ Main application file
 """
 from fasthtml.common import *
 from components import Navbar, Hero, QuickLinks, QuickOverview, CTASection, FooterSection
+from components.about_hero import AboutHero
+from components.about_sections import PrincipalMessageSection, CommunitySection, StatisticsSection
 
 # Create FastHTML app with static files and external resources
 app, rt = fast_app(
@@ -83,9 +85,10 @@ def get():
     return (
         Title("About Us - Sandipani VidhyaPeeth"),
         Navbar(),
-        Div(
-            H1("About Us Page - Coming Soon", style="text-align: center; padding: 200px 0;")
-        ),
+        AboutHero(),
+        PrincipalMessageSection(),
+        CommunitySection(),
+        StatisticsSection(),
         FooterSection()
     )
 
