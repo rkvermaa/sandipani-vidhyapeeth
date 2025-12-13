@@ -76,6 +76,8 @@ def clean_html(content):
     # Fix absolute paths for static assets to relative
     content = content.replace('href="/static/', 'href="static/')
     content = content.replace('src="/static/', 'src="static/')
+    content = content.replace("url('/static/", "url('static/")
+    content = content.replace('url("/static/', 'url("static/')
 
     # Clean up whitespace
     content = re.sub(r'\n\s*\n\s*\n', '\n\n', content)
