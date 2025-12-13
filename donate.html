@@ -1,7 +1,7 @@
  <!doctype html>
  <html>
    <head>
-     <title>Contact - Sandipani VidhyaPeeth</title>
+     <title>Donate - Sandipani VidhyaPeeth</title>
      
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -45,9 +45,49 @@ HOME</a>             </li>
          </div>
        </nav>
      </div>
-     <div>
-       <h1 style="text-align: center; padding: 200px 0;">Contact Page - Coming Soon</h1>
-     </div>
+     <section class="about-hero">
+       <div class="hero-background">
+         <div class="hero-slide active" style="background-image: url('/static/images/home/hero-background-1.jpg')"></div>
+         <div class="hero-overlay"></div>
+       </div>
+       <div class="container">
+         <div class="hero-content">
+           <h1 class="hero-title">
+Support <span class="gradient-text">Our Mission</span>           </h1>
+           <p class="hero-subtitle about-subtitle">Your contribution helps us provide quality education to students</p>
+         </div>
+       </div>
+     </section>
+     <section class="form-section">
+       <div class="container">
+         <div class="donate-content">
+           <div class="donate-left">
+             <h2 class="donate-qr-title">Scan &amp; Donate</h2>
+             <p class="donate-qr-description">Scan the QR code below to make a donation via UPI. After payment, please submit the receipt through the form.</p>
+             <div class="qr-code-wrapper">
+<img src="static/images/donate/qr_code.png" alt="Donation QR Code" class="qr-code-image">             </div>
+             <div class="donate-steps">
+               <p class="donate-step">✓ Scan QR code using any UPI app</p>
+               <p class="donate-step">✓ Complete the payment</p>
+               <p class="donate-step">✓ Take a screenshot of payment confirmation</p>
+               <p class="donate-step">✓ Upload the screenshot in the form</p>
+             </div>
+           </div>
+           <div class="donate-right">
+             <h3 class="donate-form-title">Submit Payment Details</h3>
+<form enctype="multipart/form-data" method="POST" action="#" class="donate-form">               <input type="text" name="donor_name" placeholder="Full Name *" required id="donor_name" class="form-input-pill">
+               <input type="email" name="donor_email" placeholder="Email Address (Optional)" id="donor_email" class="form-input-pill">
+               <input type="tel" name="donor_phone" placeholder="Phone Number *" required id="donor_phone" class="form-input-pill">
+               <input type="text" name="donor_address" placeholder="Address *" required id="donor_address" class="form-input-pill">
+               <div class="upload-group">
+<label class="upload-label">Upload Payment Receipt *</label>                 <div class="file-upload-wrapper">
+<label for="receipt" class="file-upload-btn">Choose File</label><span id="file-name" class="file-name">No file chosen</span>                   <input type="file" name="receipt" accept="image/*" required onchange="document.getElementById('file-name').textContent = this.files[0] ? this.files[0].name : 'No file chosen'" id="receipt" class="file-input-hidden">
+                 </div>
+               </div>
+<button type="submit" class="btn btn-primary form-submit-pill">Submit Receipt</button></form>           </div>
+         </div>
+       </div>
+     </section>
      <footer class="footer">
        <div class="container">
          <div class="footer-content">
