@@ -6,6 +6,9 @@ from fasthtml.common import *
 from components import Navbar, Hero, QuickLinks, QuickOverview, CTASection, FooterSection
 from components.about_hero import AboutHero
 from components.about_sections import PrincipalMessageSection, CommunitySection, StatisticsSection
+from components.request_info import RequestInfoHero, RequestInfoForm
+from components.plan_visit import PlanVisitHero, PlanVisitForm
+from components.donate import DonateHero, DonateForm
 
 # Create FastHTML app with static files and external resources
 app, rt = fast_app(
@@ -16,6 +19,11 @@ app, rt = fast_app(
         Link(
             rel="stylesheet",
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        ),
+        # Font Awesome Icons
+        Link(
+            rel="stylesheet",
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         ),
         # Custom CSS
         Link(rel="stylesheet", href="/static/css/styles.css", type="text/css"),
@@ -102,6 +110,42 @@ def get():
         Div(
             H1("Contact Page - Coming Soon", style="text-align: center; padding: 200px 0;")
         ),
+        FooterSection()
+    )
+
+
+@rt("/request-info")
+def get():
+    """Request Information page"""
+    return (
+        Title("Request Information - Sandipani VidhyaPeeth"),
+        Navbar(),
+        RequestInfoHero(),
+        RequestInfoForm(),
+        FooterSection()
+    )
+
+
+@rt("/plan-visit")
+def get():
+    """Plan a Visit page"""
+    return (
+        Title("Plan a Visit - Sandipani VidhyaPeeth"),
+        Navbar(),
+        PlanVisitHero(),
+        PlanVisitForm(),
+        FooterSection()
+    )
+
+
+@rt("/donate")
+def get():
+    """Donate page"""
+    return (
+        Title("Donate - Sandipani VidhyaPeeth"),
+        Navbar(),
+        DonateHero(),
+        DonateForm(),
         FooterSection()
     )
 

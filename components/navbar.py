@@ -25,17 +25,17 @@ def Navbar():
                 ),
                 # Location links on the right
                 Div(
-                    A("REQUEST INFO", href="/contact", cls="top-bar-link"),
-                    A("PLAN A VISIT", href="/contact", cls="top-bar-link"),
-                    A("DONATE", href="#", cls="top-bar-link"),
+                    A("REQUEST INFO", href="/request-info", cls="top-bar-link"),
+                    A("PLAN A VISIT", href="/plan-visit", cls="top-bar-link"),
+                    A("DONATE", href="/donate", cls="top-bar-link"),
                     cls="top-bar-links"
                 ),
                 # Scroll buttons (shown only when scrolled)
                 Div(
                     A("APPLY NOW", href="/admissions", cls="scroll-btn"),
-                    A("REQUEST INFO", href="/contact", cls="scroll-btn"),
-                    A("PLAN A VISIT", href="/contact", cls="scroll-btn"),
-                    A("DONATE", href="#", cls="scroll-btn"),
+                    A("REQUEST INFO", href="/request-info", cls="scroll-btn"),
+                    A("PLAN A VISIT", href="/plan-visit", cls="scroll-btn"),
+                    A("DONATE", href="/donate", cls="scroll-btn"),
                     cls="scroll-buttons"
                 ),
                 cls="top-bar-container"
